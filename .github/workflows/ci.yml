@@ -11,6 +11,7 @@ on:
 
 jobs:
   lint:
+    name: Typecheck, StyleLint, and Knip
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
