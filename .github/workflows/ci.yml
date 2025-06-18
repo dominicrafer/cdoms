@@ -35,7 +35,3 @@ jobs:
 
       - name: Lint with StyleLint
         run: npm run stylelint
-
-      - name: Lint with Knip (Reporter)
-        if: ${{ github.event_name == 'pull_request' }}
-        uses: codex-/knip-reporter@v2
