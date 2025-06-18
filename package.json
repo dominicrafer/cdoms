@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "knip": "knip",
-    "stylelint": "stylelint */.{css,js}",
+    "stylelint": "stylelint  \"src/assets/**/*.{css,js}\"",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
