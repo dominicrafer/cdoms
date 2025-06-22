@@ -1,3 +1,5 @@
 export default  function Homepage() {
-    return 'test'
+    return (
+        <span>CONTENT</span>
+    )
 }
