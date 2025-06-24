@@ -1,5 +1,5 @@
 :root {
-  --black: #171717; // body
+  --black: #2D2D2D; // body
   --dark-gray: #444444; // cards or sections
   --brown-accent: #948979; 
   --red-accent-hover: #b3002d;
@@ -7,6 +7,7 @@
 }
 
 body {
+  font-family: 'Inter', sans-serif;
   background-color: var(--black);
 }
 

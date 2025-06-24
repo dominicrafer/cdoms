@@ -1,13 +1,12 @@
 import Content from "./content";
 import Aside from "./aside";
-import styles from "./styles.module.css";
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className={styles.layoutContainer}>
-      <aside className={styles.aside}>
+    <div className="flex flex-row">
+      <aside>
         <Aside />
       </aside>
-      <main className={styles.content}>
+      <main>
         <Content>{children}</Content>
       </main>
     </div>
