@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: "Inter";
+  --color-primary: #222831;
+  --color-secondary: #393E46;
+  --color-accent: #948979;
+}
+
+body {
+  font-family: var(--font-display);
+}

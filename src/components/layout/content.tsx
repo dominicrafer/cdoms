@@ -1,7 +1,7 @@
 const Content = ({ children }: { children: React.ReactNode }) => {
-  return <div >
+  return <main className="flex-grow">
     {children}
-  </div>;
+  </main>;
 };
 
 export default Content;
