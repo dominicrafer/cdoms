@@ -1,10 +1,12 @@
 import Content from "./content";
-import Aside from "./aside";
+import Navbar from "./navbar";
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex flex-row bg-primary w-screen h-screen px-32 py-12 gap-8">
-        <Aside />
+    <div className="py-12 bg-primary">
+      <div className="mx-auto flex flex-col gap-8">
+        <Navbar />
         <Content>{children}</Content>
+      </div>
     </div>
   );
 };

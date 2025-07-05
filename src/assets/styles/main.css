@@ -1,12 +1,46 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   --font-display: "Inter";
-  --color-primary: #222831;
-  --color-secondary: #393E46;
-  --color-accent: #948979;
+  --color-primary: #3a506b;
+  --color-secondary: #ffedcb;
+  --color-accent: #dfa01f;
+  --color-neutral: #fff;
+
+  /* --subtitle: "";
+  --text: ; */
+}
+
+@layer components {
+  /* Shadows */
+  .text-shadow-default {
+    text-shadow: 6px 6px 4px rgb(0 0 0 / 25%);
+  }
+
+  .box-shadow-default {
+    box-shadow: 6px 6px 4px rgb(0 0 0 / 25%);
+  }
+
+  .inset-shadow-default {
+    box-shadow: inset 6px 6px 4px rgb(0 0 0 / 25%),
+      inset -6px -6px 4px rgb(0 0 0 / 25%);
+  }
+
+  /* Buttons */
+
+  .btn {
+    @apply py-3 px-6 rounded-full w-fit;
+
+    &.primary {
+      @apply bg-primary text-secondary;
+    }
+
+    &.secondary {
+      @apply bg-secondary text-primary;
+    }
+  }
 }
 
 body {
-  font-family: var(--font-display);
+  @apply text-neutral text-sm font-display;
 }
