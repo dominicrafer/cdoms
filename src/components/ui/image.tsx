@@ -10,7 +10,7 @@ type ImageProps = {
 const Image = ({
   src,
   alt,
-  className = "w-full h-auto object-cover",
+  className = "w-autoh-auto object-cover",
   fallbackSrc = DEFAULT_FALLBACK_IMAGE, // You can replace this with your own placeholder path
 }: ImageProps) => {
   const [imgSrc, setImgSrc] = useState(src ?? fallbackSrc);

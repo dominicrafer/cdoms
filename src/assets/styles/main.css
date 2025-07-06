@@ -1,14 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Inter";
+  --font-display: monda;
   --color-primary: #3a506b;
-  --color-secondary: #ffedcb;
-  --color-accent: #dfa01f;
+  --color-secondary: #212d40;
+  --color-accent: #00d8ff;
   --color-neutral: #fff;
-
-  /* --subtitle: "";
-  --text: ; */
 }
 
 @layer components {
@@ -29,10 +26,10 @@
   /* Buttons */
 
   .btn {
-    @apply py-3 px-6 rounded-full w-fit;
+    @apply py-2 px-4 rounded-lg w-fit;
 
     &.primary {
-      @apply bg-primary text-secondary;
+      @apply bg-secondary text-neutral;
     }
 
     &.secondary {
@@ -43,4 +40,37 @@
 
 body {
   @apply text-neutral text-sm font-display;
+}
+
+h1 {
+  @apply text-2xl font-bold;
+}
+
+h2 {
+  @apply text-xl font-medium;
+}
+
+h3 {
+  @apply text-lg font-medium;
+}
+
+.group:hover .hover-effect,
+.group:focus-visible .hover-effect {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hover-effect {
+  position: absolute;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.2),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: scale(0.95);
 }

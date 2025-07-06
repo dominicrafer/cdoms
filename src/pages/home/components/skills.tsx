@@ -3,22 +3,22 @@ import TechCard from "../../../components/ui/tech-card";
 
 const Skills = () => {
   return (
-    <section className="py-16 mx-auto max-w-screen-lg">
-      <SectionHeader>Current Technologies</SectionHeader>
-      <p className="text-md text-slate-300">
-        I work with a range of modern technologies that let me build powerful
-        and reliable solutions. Here are some of my go-to tools.
-      </p>
-      <div className="grid grid-cols-4 mt-8 gap-4">
+    <section className=" mx-auto max-w-screen-lg">
+      <SectionHeader
+        title="Current Technologies"
+        subtitle="I work with a range of modern technologies that let me build powerful and reliable solutions. Here are some of my go-to tools."
+      />
+
+      <div className="grid grid-cols-3 gap-4 mt-4">
         <TechCard
           title="Git"
           subtitle="Version Control"
           icon="/src/assets/icons/github.svg"
-          iconHexColor="#000000"
+          iconHexColor="#0D99FF"
         />
         <TechCard
           title="HTML"
-          subtitle="Hypertext Markup Language"
+          subtitle="Markup Language"
           icon="/src/assets/icons/html.svg"
           iconHexColor="#E14E1D"
         />

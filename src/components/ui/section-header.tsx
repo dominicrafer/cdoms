@@ -1,17 +1,18 @@
 import clsx from "clsx";
 
 const SectionHeader = ({
-  children,
+  title,
+  subtitle,
   className,
 }: {
-  children: React.ReactNode;
+  title?: string;
+  subtitle?: string;
   className?: string;
 }) => {
   return (
-    <header
-      className={clsx("text-secondary text-3xl section-header", className)}
-    >
-      {children}
+    <header className={className}>
+      <h2>{title}</h2>
+      <p className="opacity-70">{subtitle}</p>
     </header>
   );
 };

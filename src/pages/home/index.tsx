@@ -6,9 +6,8 @@ import Skills from "./components/skills";
 export default function Homepage() {
   return (
     <>
-      <Hero />
       <Skills />
-      <Career />
+      {/* <Career /> */}
     </>
   );
 }

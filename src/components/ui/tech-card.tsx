@@ -10,7 +10,7 @@ const TechCard = ({
   iconHexColor: string;
 }) => {
   return (
-    <div className="flex gap-3 p-2.5 text-neutral rounded-lg bg-black/60 items-end">
+    <div className="flex gap-3 p-2.5 text-neutral rounded-lg bg-secondary items-center">
       <div
         className={`p-2.5 rounded-lg`}
         style={{ backgroundColor: `${iconHexColor}4D` }}
