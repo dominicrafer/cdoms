@@ -11,7 +11,7 @@ const Aside = () => {
           className="rounded-full w-[250px]"
         ></Image>
         <h1 className="mt-4">Christian Dominic Rafer</h1>
-        <h2>Senior Frontend Developer</h2>
+        <h2>Frontend Developer</h2>
 
         <p className="flex gap-1.5 opacity-50 mt-2">
           <Image src="/src/assets/icons/location-sm.svg" alt="location" />
