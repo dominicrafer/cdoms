@@ -12,7 +12,9 @@ const Button = ({
   icon?: string;
 }) => {
   return (
-    <button className={`btn ${variant} ${className} flex gap-2`}>
+    <button
+      className={`btn cursor-pointer ${variant} ${className} flex gap-2 items-center`}
+    >
       {icon ? <Image src={icon} alt={`icon-${icon}`}></Image> : null}
       {children}
     </button>

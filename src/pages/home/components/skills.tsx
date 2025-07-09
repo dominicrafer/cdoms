@@ -3,13 +3,13 @@ import TechCard from "../../../components/ui/tech-card";
 
 const Skills = () => {
   return (
-    <section className=" mx-auto max-w-screen-lg">
+    <section className="w-full">
       <SectionHeader
         title="Current Technologies"
         subtitle="I work with a range of modern technologies that let me build powerful and reliable solutions. Here are some of my go-to tools."
       />
 
-      <div className="grid grid-cols-3 gap-4 mt-4">
+      <div className="grid grid-cols-4 gap-4 mt-4">
         <TechCard
           title="Git"
           subtitle="Version Control"
@@ -69,6 +69,12 @@ const Skills = () => {
           subtitle="Vue Framework"
           icon="/src/assets/icons/nuxt.svg"
           iconHexColor="#00E676"
+        />
+        <TechCard
+          title="Figma"
+          subtitle="Design Tool"
+          icon="/src/assets/icons/figma.svg"
+          iconHexColor="#FF8A65"
         />
       </div>
     </section>

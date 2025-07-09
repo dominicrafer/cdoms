@@ -8,13 +8,12 @@ type ImageProps = {
 };
 
 const Image = ({
-  src,
+  src = "/public/placeholder.jpg",
   alt,
-  className = "w-autoh-auto object-cover",
-  fallbackSrc = DEFAULT_FALLBACK_IMAGE, // You can replace this with your own placeholder path
+  className = "w-auto h-auto object-cover",
+  fallbackSrc = DEFAULT_FALLBACK_IMAGE,
 }: ImageProps) => {
   const [imgSrc, setImgSrc] = useState(src ?? fallbackSrc);
-  console.log(imgSrc);
   return (
     <img
       src={imgSrc}
