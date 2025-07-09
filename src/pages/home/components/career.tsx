@@ -7,7 +7,7 @@ const Career = () => {
     <section className="mx-auto w-full">
       <SectionHeader
         title="Career"
-        subtitle="I have over 7 years of experience in development. This includes both the frontend and backend roles I have."
+        subtitle="I have over 7 years of experience in development. This includes both the frontend and backend roles I had."
       />
       <div className="flex flex-col gap-6 mt-4">
         <article className="flex  flex-col items-start p-3 before:content-[''] before:w-0.5 before:h-full before:bg-neutral-500 before:top-0 before:absolute before:-left-0 before:rounded-md relative">

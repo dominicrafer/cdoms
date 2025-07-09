@@ -22,8 +22,8 @@ const Aside = () => {
           raferdominic@gmail.com
         </p>
         <span className="text-2xs mt-2 block opacity-60 leading-5 text-justify">
-          I'm a Front-End Developer with over 7 years of expqerience creating
-          and maintaining web applications using modern frameworks like{" "}
+          I'm a Front-End Developer specialized in creating and maintaining web
+          applications using modern frameworks like{" "}
           <b className="text-accent">Vue/Nuxt</b>,
           <b className="text-accent"> React/NextJS</b>, and{" "}
           <b className="text-accent">Remix</b>. I specialize in transforming
