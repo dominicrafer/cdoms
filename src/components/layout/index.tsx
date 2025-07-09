@@ -3,10 +3,12 @@ import Aside from "./aside";
 import SpotlightCursor from "./spotlight";
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="py-12 bg-[#131924] h-screen ">
-      <SpotlightCursor />
-      <Aside />
-      <Content>{children}</Content>
+    <div className=" bg-[#131924]">
+      <div className="max-w-screen-xl flex mx-auto gap-16 justify-center">
+        <SpotlightCursor />
+        <Aside />
+        <Content>{children}</Content>
+      </div>
     </div>
   );
 };

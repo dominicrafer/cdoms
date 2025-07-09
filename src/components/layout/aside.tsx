@@ -3,14 +3,14 @@ import Image from "../ui/image";
 
 const Aside = () => {
   return (
-    <aside className="fixed w-[25%] h-screen top-0 left-0 ml-32 py-16 flex flex-col justify-between">
+    <aside className="w-[400px] min-w-[400px] h-screen  flex flex-col justify-between sticky top-0 py-12">
       <section>
         <Image
           src="/public/profile.jpg"
           alt="profile-pic"
           className="rounded-full w-[250px]"
         ></Image>
-        <h1 className="mt-4">Christian Dominic Rafer</h1>
+        <h1 className="mt-4 text-accent">Christian Dominic Rafer</h1>
         <h2>Frontend Developer</h2>
 
         <p className="flex gap-1.5 opacity-50 mt-2">
@@ -21,9 +21,9 @@ const Aside = () => {
           <Image src="/src/assets/icons/email-sm.svg" alt="location" />
           raferdominic@gmail.com
         </p>
-        <span className="text-2xs mt-2 block opacity-60 leading-5">
-          I'm a Front-End Developer with over 7 years of experience creating and
-          maintaining web applications using modern frameworks like{" "}
+        <span className="text-2xs mt-2 block opacity-60 leading-5 text-justify">
+          I'm a Front-End Developer with over 7 years of expqerience creating
+          and maintaining web applications using modern frameworks like{" "}
           <b className="text-accent">Vue/Nuxt</b>,
           <b className="text-accent"> React/NextJS</b>, and{" "}
           <b className="text-accent">Remix</b>. I specialize in transforming
@@ -46,8 +46,7 @@ const Aside = () => {
         </Button>
       </section>
       <section className="opacity-50 text-xs">
-        <p>© 2025 Christian Dominic Rafer.</p>
-        Built with React & Tailwind CSS.
+        <p>© 2025 Christian Dominic Rafer. Built with React & Tailwind CSS.</p>
       </section>
     </aside>
   );
