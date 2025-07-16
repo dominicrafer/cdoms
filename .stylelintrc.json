@@ -1,0 +1,14 @@
+{
+  "defaultSeverity": "warning",
+  "ignoreFiles": ["tokens/**/*.js"],
+  "plugins": [
+    "stylelint-no-unresolved-module",
+    "stylelint-value-no-unknown-custom-properties"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-css-modules",
+    "stylelint-config-clean-order",
+    "stylelint-config-tailwindcss"
+  ]
+}
