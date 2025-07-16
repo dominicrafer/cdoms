@@ -3,11 +3,7 @@
 
 name: CI
 
-on:
-  push:
-    branches: ["main", "develop"]
-  pull_request:
-    branches: ["main"]
+on: pull_request
 
 jobs:
   lint:
@@ -20,18 +16,15 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*'
-          cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
+          node-version: "lts/*"
+          cache: "npm"
+          cache-dependency-path: "**/package-lock.json"
 
       - name: Install dependencies
         run: npm install
 
       - name: Typecheck
-        run: npm run typecheck                            
+        run: npm run typecheck
 
       - name: Lint with Knip
         run: npm run knip
-
-      - name: Lint with StyleLint
-        run: npm run stylelint

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Monda;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("./fonts/Monda-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Monda;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("./fonts/Monda-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Monda;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("./fonts/Monda-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Monda;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("./fonts/Monda-Bold.ttf") format("truetype");
+}

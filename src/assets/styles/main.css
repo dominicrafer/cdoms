@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: monda;
+  --color-primary: #3a506b;
+  --color-secondary: #212d40;
+  --color-accent: #00d8ff;
+  --color-neutral: #fff;
+}
+
+@layer components {
+  /* Shadows */
+  .text-shadow-default {
+    text-shadow: 6px 6px 4px rgb(0 0 0 / 25%);
+  }
+
+  .box-shadow-default {
+    box-shadow: 6px 6px 4px rgb(0 0 0 / 25%);
+  }
+
+  .inset-shadow-default {
+    box-shadow: inset 6px 6px 4px rgb(0 0 0 / 25%),
+      inset -6px -6px 4px rgb(0 0 0 / 25%);
+  }
+
+  /* Buttons */
+
+  .btn {
+    @apply py-2 px-4 rounded-lg w-fit;
+
+    &.primary {
+      @apply bg-secondary text-neutral;
+    }
+
+    &.secondary {
+      @apply bg-secondary;
+    }
+  }
+}
+
+body {
+  @apply text-neutral text-sm font-display;
+}
+
+h1 {
+  @apply text-3xl font-bold;
+}
+
+h2 {
+  @apply text-2xl font-medium;
+}
+
+h3 {
+  @apply text-xl font-medium;
+}
+
+.carousel-container {
+  .carousel-item {
+    width: var(--spacing * 256) !important;
+  }
+}
+
+.hover-effect {
+  @apply absolute -z-10 h-full w-full opacity-0;
+
+  transform: scale(0.95);
+  background: radial-gradient(
+    circle at center,
+    rgb(255 255 255 / 20%),
+    transparent 70%
+  );
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.group:hover .hover-effect,
+.group:focus-visible .hover-effect {
+  transform: scale(1);
+  opacity: 1;
+}
