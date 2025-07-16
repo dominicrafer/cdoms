@@ -1,6 +1,5 @@
 import Button from "../ui/button";
 import Image from "../ui/image";
-import EmailIcon from "../ui/icon";
 import Icon from "../ui/icon";
 const Aside = () => {
   return (

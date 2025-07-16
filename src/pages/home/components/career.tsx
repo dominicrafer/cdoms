@@ -1,6 +1,4 @@
 import CareerCard from "../../../components/ui/career-card";
-import Chip from "../../../components/ui/chip";
-import Image from "../../../components/ui/image";
 import SectionHeader from "../../../components/ui/section-header";
 
 const Career = () => {
