@@ -1,4 +1,5 @@
-import Image from "../ui/image";
+import Icon from "./icon";
+import type { IconType } from "./icon";
 
 const Button = ({
   children,
@@ -9,13 +10,13 @@ const Button = ({
   children?: React.ReactNode;
   variant: "primary" | "secondary";
   className?: string;
-  icon?: string;
+  icon?: IconType;
 }) => {
   return (
     <button
-      className={`btn cursor-pointer ${variant} ${className} flex gap-2 items-center`}
+      className={`btn cursor-pointer ${variant} ${className} flex gap-1 items-center`}
     >
-      {icon ? <Image src={icon} alt={`icon-${icon}`}></Image> : null}
+      {icon ? <Icon type={icon} size="md" /> : null}
       {children}
     </button>
   );

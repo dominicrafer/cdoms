@@ -1,30 +1,41 @@
 import Button from "../ui/button";
 import Image from "../ui/image";
-
+import Icon from "../ui/icon";
 const Aside = () => {
   return (
-    <aside className="w-[400px] min-w-[400px] h-screen  flex flex-col justify-between sticky top-0 py-12">
+    // w-[400px] min-w-[400px] h-screen flex flex-col justify-between items-center sticky top-0 py-12
+    <aside className="w-full p-6 flex flex-col justify-between h-screen text-white text-center lg:text-left lg:min-w-[400px] lg:sticky lg:top-0">
       <section>
         <Image
           src="/public/profile.jpg"
           alt="profile-pic"
-          className="rounded-full w-[250px]"
+          className="rounded-full w-[370px] mx-auto"
         ></Image>
         <h1 className="mt-4 text-accent">Christian Dominic Rafer</h1>
         <h2>Frontend Developer</h2>
+        <div className="flex justify-between items-center">
+          <p className="flex gap-1.5 text-neutral-400 mt-2">
+            <Icon type="LocationIcon" size="sm" />
+            Philippines, Laguna
+          </p>
+          <div className="flex gap-2 items-center py-1 px-2 bg-green-500/20 rounded-md relative">
+            <div className="w-2 h-2 animate-ping rounded-full bg-green-500"></div>
+            <span className="absolute left-2 inline-flex size-2 rounded-full bg-green-500"></span>
+            <small className="text-green-500">Open to work</small>
+          </div>
+        </div>
 
-        <p className="flex gap-1.5 opacity-50 mt-2">
-          <Image src="/src/assets/icons/location-sm.svg" alt="location" />
-          Philippines, Laguna
-        </p>
-        <p className="flex gap-2 opacity-50 mt-1">
-          <Image src="/src/assets/icons/email-sm.svg" alt="location" />
+        <a
+          href="mailto:raferdominic@gmail.com"
+          className="flex items-center gap-2 text-neutral-400 mt-1 transition duration-300 hover:text-accent hover:font-bold"
+        >
+          <Icon size="sm" type="EmailIcon" />
           raferdominic@gmail.com
-        </p>
-        <span className="text-2xs mt-2 block opacity-60 leading-5 text-justify">
-          I'm a Front-End Developer specialized in creating and maintaining web
-          applications using modern frameworks like{" "}
-          <b className="text-accent">Vue/Nuxt</b>,
+        </a>
+        <span className="text-2xs mt-2 block opacity-60 leading-5 text-justify hover:opacity-100 transition-opacity duration-300">
+          I'm a Front-End Developer who builds and maintains web apps using
+          modern frameworks like
+          <b className="text-accent"> Vue/Nuxt</b>,
           <b className="text-accent"> React/NextJS</b>, and{" "}
           <b className="text-accent">Remix</b>. I specialize in transforming
           UI/UX designs into responsive, high-performance interfaces using
@@ -32,21 +43,45 @@ const Aside = () => {
           <b className="text-accent"> CSS</b>, and{" "}
           <b className="text-accent">JavaScript</b>
         </span>
-        <div className="flex gap-2 items-center mt-4">
-          <Image src="/src/assets/icons/facebook.svg" alt="facebook" />
-          <Image src="/src/assets/icons/linkedin.svg" alt="linkedin" />
-          <Image src="/src/assets/icons/github-sm.svg" alt="github" />
-        </div>
+
         <Button
           variant="primary"
-          icon="/src/assets/icons/download.svg"
-          className="mt-4"
+          icon="FileDownloadIcon"
+          className="mt-4 w-full justify-center lg: inline-flex"
         >
           Resume
         </Button>
       </section>
-      <section className="opacity-50 text-xs">
-        <p>© 2025 Christian Dominic Rafer. Built with React & Tailwind CSS.</p>
+      <section>
+        <div className="flex gap-2 items-center justify-center mt-4 lg:justify-start">
+          <a
+            href="https://www.facebook.com/dominicrafer"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent duration-500 transition-all"
+          >
+            <Icon type="FacebookIcon" size="lg" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/christian-dominic-rafer-ab7382151/cdoms"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent duration-500"
+          >
+            <Icon type="LinkedInIcon" size="lg" />
+          </a>
+          <a
+            href="https://github.com/dominicrafer"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent duration-500"
+          >
+            <Icon type="GithubIcon" size="lg" />
+          </a>
+        </div>
+        <p className="text-neutral-400 text-xs mt-4">
+          © 2025 Christian Dominic Rafer. Built with React & Tailwind CSS.
+        </p>
       </section>
     </aside>
   );
