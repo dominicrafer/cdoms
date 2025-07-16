@@ -1,5 +1,6 @@
 {
   "name": "cdoms",
+  "homepage": "https://dominicrafer.github.io/cdoms/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +11,9 @@
     "preview": "vite preview",
     "knip": "knip",
     "stylelint": "stylelint  \"src/assets/**/*.{css,scss,js}\"",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",

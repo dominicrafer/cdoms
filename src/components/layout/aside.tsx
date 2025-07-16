@@ -9,7 +9,7 @@ const Aside = () => {
         <Image
           src="/public/profile.jpg"
           alt="profile-pic"
-          className="rounded-full w-[370px] mx-auto"
+          className="rounded-full w-[320px] mx-auto"
         ></Image>
         <h1 className="mt-4 text-accent">Christian Dominic Rafer</h1>
         <h2>Frontend Developer</h2>
