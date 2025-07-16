@@ -3,13 +3,13 @@ import TechCard from "../../../components/ui/tech-card";
 
 const Skills = () => {
   return (
-    <section className="w-full">
+    <section className="w-full px-6">
       <SectionHeader
         title="Current Technologies"
         subtitle="I work with a range of modern technologies that let me build powerful and reliable solutions. Here are some of my go-to tools."
       />
 
-      <div className="grid grid-cols-4 gap-4 mt-4">
+      <div className="inline-grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-2 mt-4">
         <TechCard
           title="Git"
           subtitle="Version Control"

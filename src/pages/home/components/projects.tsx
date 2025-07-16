@@ -6,7 +6,7 @@ import Button from "../../../components/ui/button";
 
 const Projects = () => {
   return (
-    <section className="mx-auto w-full">
+    <section className="mx-auto w-full px-6">
       <SectionHeader title="Projects" />
       <section className="flex flex-col gap-2 mt-4 p-3 relative before:content-[''] before:w-0.5 before:h-full before:bg-neutral-500 before:top-0 before:absolute before:-left-0 before:rounded-md ">
         <div className="flex gap-2 justify-between">
@@ -17,7 +17,7 @@ const Projects = () => {
               design skills, and passion for building clean, user-focused web
               experiences. This is the website you're looking right now.
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col gap-2 md:flex-row md:justify-between">
               <div className="flex gap-2 mt-4">
                 <Chip title="React" />
                 <Chip title="TypeScript" />
@@ -25,10 +25,7 @@ const Projects = () => {
               </div>
 
               <div className="flex gap-2">
-                <Button
-                  variant="primary"
-                  icon="/src/assets/icons/github-sm.svg"
-                >
+                <Button variant="primary" icon="GithubIcon">
                   View GitHub
                 </Button>
               </div>
