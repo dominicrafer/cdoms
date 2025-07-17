@@ -16,7 +16,7 @@ const Image = ({
   const [imgSrc, setImgSrc] = useState(src ?? fallbackSrc);
   return (
     <img
-      src={`${import.meta.env.BASE_URL} + ${imgSrc}`}
+      src={`${import.meta.env.BASE_URL + imgSrc}`}
       alt={alt}
       loading="lazy"
       onError={() => setImgSrc(fallbackSrc)}
