@@ -1,5 +1,5 @@
 import { useState } from "react";
-const DEFAULT_FALLBACK_IMAGE = "/public/fallback.jpg";
+const DEFAULT_FALLBACK_IMAGE = "/public/placeholder.jpg";
 type ImageProps = {
   src?: string;
   alt: string;
@@ -16,7 +16,7 @@ const Image = ({
   const [imgSrc, setImgSrc] = useState(src ?? fallbackSrc);
   return (
     <img
-      src={imgSrc}
+      src={`${import.meta.env.BASE_URL} + ${imgSrc}`}
       alt={alt}
       loading="lazy"
       onError={() => setImgSrc(fallbackSrc)}
