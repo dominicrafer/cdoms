@@ -4,7 +4,7 @@ import Icon from "../ui/icon";
 const Aside = () => {
   return (
     // w-[400px] min-w-[400px] h-screen flex flex-col justify-between items-center sticky top-0 py-12
-    <aside className="w-full p-6 flex flex-col justify-between h-screen text-white text-center lg:text-left lg:min-w-[400px] lg:sticky lg:top-0">
+    <aside className="w-full p-6 flex flex-col justify-between h-screen text-white text-center lg:text-left lg:min-w-[400px] lg:max-w-[400px] lg:sticky lg:top-0">
       <section>
         <Image
           src="/public/profile.jpg"
