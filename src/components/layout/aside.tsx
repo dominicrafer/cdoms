@@ -61,7 +61,7 @@ const Aside = () => {
           Resume
         </Button>
       </section>
-      <section>
+      <section className="hidden lg:block">
         <div className="flex gap-2 items-center justify-center mt-4 lg:justify-start">
           <a
             href="https://www.linkedin.com/in/christian-dominic-rafer-ab7382151/cdoms"
