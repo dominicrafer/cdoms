@@ -6,7 +6,7 @@ const Skills = () => {
     <section className="w-full px-6">
       <SectionHeader
         title="Current Technologies"
-        subtitle="I work with a range of modern technologies that let me build powerful and reliable solutions. Here are some of my go-to tools."
+        subtitle="I work with a range of modern technologies that let me build powerful and reliable solutions. Here are some of my go-to tools:"
       />
 
       <div className="inline-grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-2 mt-4">

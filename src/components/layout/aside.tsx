@@ -12,7 +12,6 @@ const Aside = () => {
   };
 
   return (
-    // w-[400px] min-w-[400px] h-screen flex flex-col justify-between items-center sticky top-0 py-12
     <aside className="w-full p-6 flex flex-col justify-between h-screen text-white text-center lg:text-left lg:min-w-[400px] lg:max-w-[400px] lg:sticky lg:top-0">
       <section>
         <Image
@@ -50,7 +49,7 @@ const Aside = () => {
           UI/UX designs into responsive, high-performance interfaces using
           technologies like <b className="text-accent">HTML</b>,
           <b className="text-accent"> CSS</b>, and{" "}
-          <b className="text-accent">JavaScript</b>
+          <b className="text-accent">JavaScript</b>.
         </span>
 
         <Button
@@ -64,14 +63,6 @@ const Aside = () => {
       </section>
       <section>
         <div className="flex gap-2 items-center justify-center mt-4 lg:justify-start">
-          <a
-            href="https://www.facebook.com/dominicrafer"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-accent duration-500 transition-all"
-          >
-            <Icon type="FacebookIcon" size="lg" />
-          </a>
           <a
             href="https://www.linkedin.com/in/christian-dominic-rafer-ab7382151/cdoms"
             target="_blank"

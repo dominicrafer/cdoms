@@ -13,21 +13,21 @@ const Career = () => {
           logo="bp.jpg"
           role="Senior Front End Developer"
           company="Booth & Partners Inc."
-          location="Taguig"
+          location="Taguig, Metro Manila, PH"
           duration="2024 - Present"
           skills={["React", "TypeScript", "Shopify", "Pack Digital", "Remix"]}
           descriptions={[
-            "Works alongside UX Designers and other cross functional team members to implement website visions and designs to working code.",
+            "Work alongside UX Designers and other cross functional team members to implement website visions and designs to working code.",
             "Front-end application maintenance such as package and content updates.",
-            "Develops custom application for internal use on Shopify",
-            "Collaborates with backend developers for front-end API integrations",
+            "Develop custom application for internal use on Shopify",
+            "Collaborate with backend developers for front-end API integrations",
           ]}
         />
         <CareerCard
           logo="ecv.png"
           role="Cloud Developer"
           company="eCloudvalley"
-          location="Taguig"
+          location="Taguig, Metro Manila, PH"
           duration="2021 - 2024"
           skills={[
             "React",
@@ -50,7 +50,7 @@ const Career = () => {
         <CareerCard
           role="Web Developer"
           company="Ximex Delivery Express Inc"
-          location="Alabang"
+          location="Alabang, Metro Manila, PH"
           duration="2019 - 2021"
           skills={["React", "Laravel", "Lumen", "PHP", "MySQL", "Ant Design"]}
           descriptions={[
@@ -63,7 +63,7 @@ const Career = () => {
         <CareerCard
           role="Web Developer"
           company="Appsilog Inc."
-          location="Alabang"
+          location="Alabang, Metro Manila, PH"
           duration="2018 - 2019"
           skills={["PHP", "CodeIgniter", "Vue", "MySQL"]}
           descriptions={[
