@@ -8,7 +8,7 @@ import Layout from "./components/layout";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Layout>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Homepage />}></Route>
         </Routes>
