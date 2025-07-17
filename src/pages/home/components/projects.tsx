@@ -26,9 +26,15 @@ const Projects = () => {
               </div>
 
               <div className="flex gap-2">
-                <Button variant="primary" icon="GithubIcon">
-                  View GitHub
-                </Button>
+                <a
+                  href="https://github.com/dominicrafer/cdoms"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="primary" icon="GithubIcon">
+                    View GitHub
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
