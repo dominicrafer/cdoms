@@ -13,67 +13,67 @@ const Skills = () => {
         <TechCard
           title="Git"
           subtitle="Version Control"
-          icon="/src/assets/icons/github.svg"
+          icon="src/assets/icons/github.svg"
           iconHexColor="#0D99FF"
         />
         <TechCard
           title="HTML"
           subtitle="Markup Language"
-          icon="/src/assets/icons/html.svg"
+          icon="src/assets/icons/html.svg"
           iconHexColor="#E14E1D"
         />
         <TechCard
           title="CSS"
           subtitle="Style Sheet Language"
-          icon="/src/assets/icons/css.svg"
+          icon="src/assets/icons/css.svg"
           iconHexColor="#0277BD"
         />
         <TechCard
           title="JavaScript"
           subtitle="Programming Language"
-          icon="/src/assets/icons/javascript.svg"
+          icon="src/assets/icons/javascript.svg"
           iconHexColor="#F0DB4F"
         />
         <TechCard
           title="TypeScript"
           subtitle="JavaScript but better"
-          icon="/src/assets/icons/typescript.svg"
+          icon="src/assets/icons/typescript.svg"
           iconHexColor="#007ACC"
         />
         <TechCard
           title="React"
           subtitle="JavaScript Library"
-          icon="/src/assets/icons/react.svg"
+          icon="src/assets/icons/react.svg"
           iconHexColor="#00D8FF"
         />
         <TechCard
           title="Vue"
           subtitle="JavaScript Framework"
-          icon="/src/assets/icons/vue.svg"
+          icon="src/assets/icons/vue.svg"
           iconHexColor="#41B883"
         />
         <TechCard
           title="NextJS"
           subtitle="React Framework"
-          icon="/src/assets/icons/nextjs.svg"
+          icon="src/assets/icons/nextjs.svg"
           iconHexColor="#000000"
         />
         <TechCard
           title="Remix"
           subtitle="React Framework"
-          icon="/src/assets/icons/remix.svg"
+          icon="src/assets/icons/remix.svg"
           iconHexColor="#000000"
         />
         <TechCard
           title="Nuxt"
           subtitle="Vue Framework"
-          icon="/src/assets/icons/nuxt.svg"
+          icon="src/assets/icons/nuxt.svg"
           iconHexColor="#00E676"
         />
         <TechCard
           title="Figma"
           subtitle="Design Tool"
-          icon="/src/assets/icons/figma.svg"
+          icon="src/assets/icons/figma.svg"
           iconHexColor="#FF8A65"
         />
       </div>
