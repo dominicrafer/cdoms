@@ -55,8 +55,11 @@
     @apply content-[''] bg-neutral-500 top-0 left-0 absolute rounded-md h-full w-0.5 transition-all duration-300;
   }
 
+  &.highlight-on-center,
   &:hover {
-    @apply bg-accent/5;
+    @apply bg-accent/5 opacity-100;
+    /* background-color: rgba(0, 216, 255, 0.5);
+    opacity: 100 !important; */
 
     h3 {
       @apply text-accent duration-500;
@@ -68,6 +71,7 @@
   }
 }
 
+:has(.career-card.highlight-on-center) .career-card:not(.highlight-on-center),
 :has(.career-card:hover) .career-card:not(:hover) {
   opacity: 0.5;
 }
@@ -92,22 +96,4 @@ h3 {
   .carousel-item {
     width: var(--spacing * 256) !important;
   }
-}
-
-.hover-effect {
-  @apply absolute -z-10 h-full w-full opacity-0;
-
-  transform: scale(0.95);
-  background: radial-gradient(
-    circle at center,
-    rgb(255 255 255 / 20%),
-    transparent 70%
-  );
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.group:hover .hover-effect,
-.group:focus-visible .hover-effect {
-  transform: scale(1);
-  opacity: 1;
 }

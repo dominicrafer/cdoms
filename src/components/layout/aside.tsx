@@ -24,7 +24,7 @@ const Aside = () => {
         <div className="flex justify-between items-center">
           <p className="flex gap-1.5 text-neutral-400 mt-2">
             <Icon type="LocationIcon" size="sm" />
-            Philippines, Laguna
+            Laguna, Philippines
           </p>
           <div className="flex gap-2 items-center py-1 px-2 bg-green-500/20 rounded-md relative">
             <div className="w-2 h-2 animate-ping rounded-full bg-green-500"></div>

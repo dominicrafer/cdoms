@@ -1,7 +1,36 @@
+import { useEffect } from "react";
 import CareerCard from "../../../components/ui/career-card";
 import SectionHeader from "../../../components/ui/section-header";
 
 const Career = () => {
+  useEffect(() => {
+    const isMobileOrTablet = window.innerWidth <= 1024;
+
+    if (!isMobileOrTablet) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("highlight-on-center");
+          } else {
+            entry.target.classList.remove("highlight-on-center");
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "-35% 0% -35% 0%",
+        threshold: 0.25,
+      }
+    );
+
+    const targets = document.querySelectorAll(".career-card");
+    targets.forEach((el) => observer.observe(el));
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
   return (
     <section className="mx-auto w-full px-6">
       <SectionHeader
@@ -10,7 +39,6 @@ const Career = () => {
       />
       <div className="flex flex-col gap-6 mt-4">
         <CareerCard
-          key={1}
           logo="bp.jpg"
           role="Senior Front End Developer"
           company="Booth & Partners Inc."
@@ -25,7 +53,6 @@ const Career = () => {
           ]}
         />
         <CareerCard
-          key={2}
           logo="ecv.png"
           role="Cloud Developer"
           company="eCloudvalley"
@@ -50,7 +77,6 @@ const Career = () => {
         />
 
         <CareerCard
-          key={3}
           role="Web Developer"
           company="Ximex Delivery Express Inc"
           location="Alabang, Metro Manila, PH"
@@ -64,7 +90,6 @@ const Career = () => {
           ]}
         />
         <CareerCard
-          key={4}
           role="Web Developer"
           company="Appsilog Inc."
           location="Alabang, Metro Manila, PH"

@@ -21,7 +21,7 @@ const CareerCard = ({
   company,
 }: CareerCardProperties) => {
   return (
-    <article className="career-card">
+    <div className="career-card" key={company}>
       <div className="flex flex-row gap-4">
         <Image
           src={logo}
@@ -35,18 +35,18 @@ const CareerCard = ({
           </p>
           <span className="text-neutral-300">{duration}</span>
           <div className="mt-4 flex flex-wrap gap-2">
-            {skills.map((skill) => (
-              <Chip title={skill} />
+            {skills.map((skill, index) => (
+              <Chip title={skill} key={index} />
             ))}
           </div>
         </div>
       </div>
       <ul className="list-disc ml-5 mt-6 text-neutral-300 flex flex-col gap-4">
-        {descriptions.map((description) => (
-          <li>{description}</li>
+        {descriptions.map((description, index) => (
+          <li key={index}>{description}</li>
         ))}
       </ul>
-    </article>
+    </div>
   );
 };
 
