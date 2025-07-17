@@ -10,7 +10,7 @@ export default function Homepage() {
       <Career />
       <Projects />
 
-      <div className="lg:hidden px-6 text-center">
+      <div className="lg:hidden px-6 text-center w-full">
         <div className="flex gap-2 items-center justify-center mt-4 lg:justify-start">
           <a
             href="https://www.linkedin.com/in/christian-dominic-rafer-ab7382151/cdoms"
