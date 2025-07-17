@@ -3,6 +3,14 @@ import Image from "../ui/image";
 import Icon from "../ui/icon";
 
 const Aside = () => {
+  const downloadResume = () => {
+    console.log("download");
+    const link = document.createElement("a");
+    link.href = "resume.pdf";
+    link.download = "resume.pdf";
+    link.click();
+  };
+
   return (
     // w-[400px] min-w-[400px] h-screen flex flex-col justify-between items-center sticky top-0 py-12
     <aside className="w-full p-6 flex flex-col justify-between h-screen text-white text-center lg:text-left lg:min-w-[400px] lg:max-w-[400px] lg:sticky lg:top-0">
@@ -49,6 +57,7 @@ const Aside = () => {
           variant="primary"
           icon="FileDownloadIcon"
           className="mt-4 w-full justify-center lg: inline-flex"
+          onClick={downloadResume}
         >
           Resume
         </Button>

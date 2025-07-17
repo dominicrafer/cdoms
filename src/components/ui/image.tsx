@@ -14,7 +14,6 @@ const Image = ({
   fallbackSrc = DEFAULT_FALLBACK_IMAGE,
 }: ImageProps) => {
   const [imgSrc, setImgSrc] = useState(src ?? fallbackSrc);
-  console.log(import.meta.env.BASE_URL + imgSrc, "import.meta.env.BASE_URL");
   return (
     <img
       src={`${import.meta.env.BASE_URL + imgSrc}`}
