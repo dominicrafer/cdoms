@@ -10,7 +10,7 @@ const Career = () => {
       />
       <div className="flex flex-col gap-6 mt-4">
         <CareerCard
-          logo="public/bp.jpg"
+          logo="bp.jpg"
           role="Senior Front End Developer"
           company="Booth & Partners Inc."
           location="Taguig"
@@ -24,7 +24,7 @@ const Career = () => {
           ]}
         />
         <CareerCard
-          logo="public/ecv.png"
+          logo="ecv.png"
           role="Cloud Developer"
           company="eCloudvalley"
           location="Taguig"

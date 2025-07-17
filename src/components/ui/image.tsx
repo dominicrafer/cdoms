@@ -1,5 +1,5 @@
 import { useState } from "react";
-const DEFAULT_FALLBACK_IMAGE = "/public/placeholder.jpg";
+const DEFAULT_FALLBACK_IMAGE = "placeholder.jpg";
 type ImageProps = {
   src?: string;
   alt: string;
@@ -8,7 +8,7 @@ type ImageProps = {
 };
 
 const Image = ({
-  src = "public/placeholder.jpg",
+  src = "placeholder.jpg",
   alt,
   className = "w-auto h-auto object-cover",
   fallbackSrc = DEFAULT_FALLBACK_IMAGE,
