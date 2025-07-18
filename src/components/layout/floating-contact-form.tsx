@@ -65,7 +65,7 @@ const FloatingContactForm = () => {
             "opacity-0 translate-y-4 pointer-events-none": !isPopoverOpen,
             "opacity-100 translate-y-0": isPopoverOpen,
           },
-          "fixed bottom-0 h-3/4 w-full z-50 transition-all ease-in-out bg-secondary shadow-2xl md:w-1/4 md:rounded-md md:bottom-20 md:right-4 md:h-1/2"
+          "fixed bottom-0 h-3/4 w-full z-50 transition-all ease-in-out bg-secondary shadow-2xl md:w-1/4 md:rounded-md md:bottom-20 md:right-4 md:h-3/4"
         )}
       >
         {!isSubmitted ? (
