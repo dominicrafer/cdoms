@@ -18,8 +18,8 @@ const Projects = () => {
               user-focused web experiences. This is the website you're currently
               viewing.
             </p>
-            <div className="flex flex-col gap-2 md:flex-row md:justify-between">
-              <div className="flex gap-2 mt-4">
+            <div className="flex flex-col gap-2 md:flex-row md:justify-between md:items-center  mt-4">
+              <div className="flex gap-2">
                 <Chip title="React" />
                 <Chip title="TypeScript" />
                 <Chip title="Tailwind" />

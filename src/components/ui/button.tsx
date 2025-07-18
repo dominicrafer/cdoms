@@ -16,7 +16,7 @@ const Button = ({
 } & ButtonHTMLAttributes<HTMLButtonElement>) => {
   return (
     <button
-      className={`btn cursor-pointer ${variant} ${className} flex gap-1 items-center`}
+      className={`btn cursor-pointer ${variant} ${className} flex gap-1 items-center justify-center`}
       {...properties}
     >
       {icon ? <Icon type={icon} size="md" /> : null}

@@ -37,6 +37,34 @@ const IconSVGFragments = {
       d="M40 17.88a2.6 2.6 0 0 0-.12-.54v-.18a2 2 0 0 0-.38-.56l-12-12a2 2 0 0 0-.56-.38h-.2a2.2 2.2 0 0 0-.62-.22H14a6 6 0 0 0-6 6v28a6 6 0 0 0 6 6h20a6 6 0 0 0 6-6Zm-12-7.06L33.18 16H30a2 2 0 0 1-2-2ZM36 38a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10v6a6 6 0 0 0 6 6h6Zm-9.42-9.42l-.58.6V24a2 2 0 0 0-4 0v5.18l-.58-.6a2 2 0 0 0-2.84 2.84l4 4a2 2 0 0 0 .66.42a1.88 1.88 0 0 0 1.52 0a2 2 0 0 0 .66-.42l4-4a2 2 0 0 0-2.84-2.84Z"
     />
   ),
+  ContactIcon: (
+    <path
+      fill="currentColor"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M40.26 3.43a5.54 5.54 0 0 1 7.2 7.2L43.26 41.07a5.54 5.54 0 0 1-4 3.65a5.47 5.47 0 0 1-5.06-1.45l-6.58-6.55l-6.91 3.58a1.71 1.71 0 0 1-2.5-1.57l.29-10.94L37.1 17.55a2.14 2.14 0 1 0-2.52-3.47L7.57 27.78l-5.94-5.94A5.47 5.47 0 0 1 .94 18.2a5.54 5.54 0 0 1 3.65-4.28h.01z"
+    />
+  ),
+  CloseIcon: (
+    <path
+      fill="currentColor"
+      d="M12.8 38L10 35.2l11.2-11.2L10 12.8L12.8 10l11.2 11.2L35.2 10L38 12.8L26.8 24l11.2 11.2l-2.8 2.8l-11.2-11.2z"
+    />
+  ),
+  CheckIcon: (
+    <>
+      <path
+        fill="currentColor"
+        d="M22.8 12.3c.304-.308.304-.808 0-1.12s-.796-.308-1.1 0l-7.75 7.86l-3.6-3.65a.77.77 0 0 0-1.1 0a.8.8 0 0 0 0 1.12l4.15 4.21a.77.77 0 0 0 1.1 0z"
+      />
+      <path
+        fill="currentColor"
+        fill-rule="evenodd"
+        d="M32 16c0 8.84-7.16 16-16 16S0 24.84 0 16S7.16 0 16 0s16 7.16 16 16m-1 0c0 8.28-6.72 15-15 15S1 24.28 1 16S7.72 1 16 1s15 6.72 15 15"
+        clip-rule="evenodd"
+      />
+    </>
+  ),
 };
 
 // const IconTypes = Object.keys(IconSVGFragments) as IconType[];
@@ -53,7 +81,7 @@ const Icon = ({
   color?: string;
   className?: string;
   size?: IconSizes;
-}) => {
+} & React.SVGProps<SVGSVGElement>) => {
   const dimension = getIconDimensions(size);
   return (
     <svg

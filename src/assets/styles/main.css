@@ -39,12 +39,20 @@
     @apply py-2 px-4 rounded-lg w-fit hover:brightness-125 duration-300;
 
     &.primary {
-      @apply bg-secondary text-neutral;
+      @apply bg-primary text-neutral;
     }
 
     &.secondary {
       @apply bg-secondary;
     }
+
+    /* &.primary {
+      @apply bg-primary text-neutral;
+    }
+
+    &.secondary {
+      @apply bg-gray-50 text-accent;
+    } */
   }
 }
 
@@ -58,8 +66,6 @@
   &.highlight-on-center,
   &:hover {
     @apply bg-accent/5 opacity-100;
-    /* background-color: rgba(0, 216, 255, 0.5);
-    opacity: 100 !important; */
 
     h3 {
       @apply text-accent duration-500;

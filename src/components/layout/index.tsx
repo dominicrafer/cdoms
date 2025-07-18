@@ -1,6 +1,7 @@
 import Content from "./content";
 import Aside from "./aside";
 import SpotlightCursor from "./spotlight";
+import FloatingContactForm from "./floating-contact-form";
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className=" bg-[#131924]">
@@ -8,6 +9,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <SpotlightCursor />
         <Aside />
         <Content>{children}</Content>
+        <FloatingContactForm></FloatingContactForm>
       </div>
     </div>
   );
