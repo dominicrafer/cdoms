@@ -25,7 +25,7 @@ const SpotlightCursor = ({
   return (
     <canvas
       ref={canvasRef}
-      className={`fixed top-0 left-0 pointer-events-none z-[9999] w-full h-full ${className}`}
+      className={`top-0 left-0 pointer-events-none z-[9999] w-full h-full ${className} hidden lg:block fixed`}
       {...rest}
     />
   );
