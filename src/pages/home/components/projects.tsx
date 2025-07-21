@@ -42,7 +42,7 @@ const Projects = () => {
         <Carousel showThumbs={false}>
           {[
             <div className="border border-neutral-500 rounded-md p-2">
-              <Image alt="project-1" src="project-1.jpg" />
+              <Image alt="project-1" src="project-1.png" />
             </div>,
           ]}
         </Carousel>
