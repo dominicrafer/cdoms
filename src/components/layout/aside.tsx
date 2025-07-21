@@ -17,7 +17,7 @@ const Aside = () => {
         <Image
           src="profile.jpg"
           alt="profile-pic"
-          className="rounded-full w-[320px] mx-auto"
+          className="rounded-full w-[270px] mx-auto"
         ></Image>
         <h1 className="mt-4 text-accent">Christian Dominic Rafer</h1>
         <h2>Frontend Developer</h2>
