@@ -47,9 +47,9 @@ const Career = () => {
           skills={["React", "TypeScript", "Shopify", "Pack Digital", "Remix"]}
           descriptions={[
             "Work alongside UX Designers and other cross functional team members to implement website visions and designs to working code.",
-            "Front-end application maintenance such as package and content updates.",
+            "Frontend application maintenance such as package and content updates.",
             "Develop custom application for internal use on Shopify",
-            "Collaborate with backend developers for front-end API integrations",
+            "Collaborate with backend developers for frontend API integrations",
           ]}
         />
         <CareerCard
@@ -68,9 +68,9 @@ const Career = () => {
             "AWS",
           ]}
           descriptions={[
-            "Set the standards for front-end development as a Cloud Developer that specializes in front-end development in the team.",
-            "Handled the translation of UI/UX design into front-end development and the API integrations with the backend developers of the team.",
-            "Built a Front-end boilerplate using Vue + Nuxt + TailwindCSS + Quasar to kick-start the frontend setup activities of the projects.",
+            "Set the standards for frontend development as a Cloud Developer that specializes in frontend development in the team.",
+            "Handled the translation of UI/UX design into frontend development and the API integrations with the backend developers of the team.",
+            "Built a Frontend boilerplate using Vue + Nuxt + TailwindCSS + Quasar to kick-start the frontend setup activities of the projects.",
             "Successfully delivered more than 10 projects including the internal projects of the company utilizing the boilerplate built.",
             "Consistently entrusted with multiple concurrent projects due to recognized expertise in frontend development.",
           ]}

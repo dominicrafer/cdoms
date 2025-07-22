@@ -41,7 +41,7 @@ const Aside = () => {
           raferdominic@gmail.com
         </a>
         <span className="text-2xs mt-2 block opacity-60 leading-5 text-justify hover:opacity-100 transition-opacity duration-300">
-          I'm a Front-End Developer who builds and maintains web apps using
+          I'm a Frontend Developer who builds and maintains web apps using
           modern frameworks like
           <b className="text-accent"> Vue/Nuxt</b>,
           <b className="text-accent"> React/NextJS</b>, and{" "}
