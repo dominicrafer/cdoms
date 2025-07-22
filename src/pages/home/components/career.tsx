@@ -40,7 +40,7 @@ const Career = () => {
       <div className="flex flex-col gap-6 mt-4">
         <CareerCard
           logo="bp.jpg"
-          role="Senior Front End Developer"
+          role="Senior Frontend Developer"
           company="Booth & Partners Inc."
           location="Taguig, Metro Manila, PH"
           duration="2024 - Present"
