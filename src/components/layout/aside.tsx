@@ -15,7 +15,7 @@ const Aside = () => {
     <aside className="w-full p-6 flex flex-col justify-between h-screen text-white text-center lg:text-left lg:min-w-[400px] lg:max-w-[400px] lg:sticky lg:top-0">
       <section>
         <Image
-          src="profile.jpg"
+          src="profile.webp"
           alt="profile-pic"
           className="rounded-full w-[300px] mx-auto"
         ></Image>
