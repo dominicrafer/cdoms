@@ -1,9 +1,19 @@
 @font-face {
   font-family: Monda;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url("./fonts/Monda-Regular.ttf") format("truetype");
+  src: url("./fonts/Monda-Regular.woff2") format("woff2"),
+    url("./fonts/Monda-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: Monda;
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("./fonts/Monda-Bold.woff2") format("woff2"),
+    url("./fonts/Monda-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -11,7 +21,8 @@
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url("./fonts/Monda-Medium.ttf") format("truetype");
+  src: url("./fonts/Monda-Medium.woff2") format("woff2"),
+    url("./fonts/Monda-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -19,13 +30,6 @@
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url("./fonts/Monda-SemiBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: Monda;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url("./fonts/Monda-Bold.ttf") format("truetype");
+  src: url("./fonts/Monda-SemiBold.woff2") format("woff2"),
+    url("./fonts/Monda-SemiBold.woff") format("woff");
 }
