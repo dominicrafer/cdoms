@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  @apply bg-[#131924];
+}
+
 @keyframes color-sweep {
   0% {
     background-position: 0% 50%;
@@ -48,12 +52,11 @@
   }
 }
 
+.career-card::before {
+  @apply content-[''] bg-neutral-500 top-0 left-0 absolute rounded-md h-full w-0.5 transition-all duration-300;
+}
 .career-card {
   @apply flex flex-col items-start p-3  relative duration-500 transition-all pointer-events-none lg:pointer-events-auto;
-
-  ::before {
-    @apply content-[''] bg-neutral-500 top-0 left-0 absolute rounded-md h-full w-0.5 transition-all duration-300;
-  }
 
   &.highlight-on-center,
   &:hover {
