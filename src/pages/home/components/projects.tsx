@@ -42,7 +42,11 @@ const Projects = () => {
         <Carousel showThumbs={false}>
           {[
             <div className="border border-neutral-500 rounded-md p-2">
-              <Image alt="project-1" src="project-1.png" />
+              <Image
+                alt="project-1"
+                src="project-1.png"
+                aspect="aspect-[16/9]"
+              />
             </div>,
           ]}
         </Carousel>

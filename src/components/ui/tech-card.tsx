@@ -14,10 +14,10 @@ const TechCard = ({
   return (
     <div className="flex gap-3 p-2 text-neutral rounded-lg bg-secondary items-center">
       <div
-        className={`p-2 rounded-lg`}
+        className={`p-2 rounded-lg w-12 h-12`}
         style={{ backgroundColor: `${iconHexColor}4D` }}
       >
-        <Image src={icon} alt={`${title}-icon`} className="w-8" />
+        <Image src={icon} alt={`${title}-icon`} />
       </div>
 
       <section>
