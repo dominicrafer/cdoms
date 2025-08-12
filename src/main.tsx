@@ -5,7 +5,7 @@ import Homepage from "./pages/home";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./assets/styles/main.css";
 import Layout from "./components/layout";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
