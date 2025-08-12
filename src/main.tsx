@@ -5,9 +5,12 @@ import Homepage from "./pages/home";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./assets/styles/main.css";
 import Layout from "./components/layout";
+import { Analytics } from "@vercel/analytics/next";
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Layout>
+      <Analytics />
       <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Homepage />}></Route>
