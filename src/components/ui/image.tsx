@@ -28,7 +28,7 @@ const Image = ({
   }, [src]);
 
   return (
-    <div className={`relative w-full ${aspect} ${className}`}>
+    <div className={`relative  ${aspect} ${className}`}>
       {!isImgLoaded && (
         <div
           className={clsx(
@@ -43,14 +43,10 @@ const Image = ({
         loading={loadingType}
         onLoad={() => setIsImgLoaded(true)}
         onError={() => setImgSrc(fallbackSrc)}
-        className={clsx(
-          `transition-opacity duration-300 w-full h-full object-cover `,
-          {
-            "opacity-100": isImgLoaded,
-            "opacity-0": !isImgLoaded,
-          },
-          className
-        )}
+        className={clsx(className, `transition-opacity duration-300`, {
+          "opacity-100": isImgLoaded,
+          "opacity-0": !isImgLoaded,
+        })}
       />
     </div>
   );

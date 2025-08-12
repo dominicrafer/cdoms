@@ -24,7 +24,11 @@ const CareerCard = ({
     <div className="career-card" key={company}>
       <div className="flex flex-row gap-4">
         <div className="w-28 h-28">
-          <Image src={logo} alt={`${logo}`} className="rounded-md"></Image>
+          <Image
+            src={logo}
+            alt={`${logo}`}
+            className="rounded-md w-full h-full"
+          ></Image>
         </div>
         <div className="flex flex-col">
           <h3>{role}</h3>
