@@ -6,8 +6,8 @@ const Aside = () => {
   const downloadResume = () => {
     console.log("download");
     const link = document.createElement("a");
-    link.href = "resume.pdf";
-    link.download = "resume.pdf";
+    link.href = "RAFER, Dominic - Resume.pdf";
+    link.download = "RAFER, Dominic - Resume.pdf";
     link.click();
   };
 
